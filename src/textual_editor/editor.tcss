@@ -1,0 +1,133 @@
+/* Styles for the editor itself. Selectors use editor-specific ids and classes so
+   they don't affect the widgets in the design. */
+
+EditorScreen {
+    layers: default ghost;
+}
+
+#editor-main {
+    height: 1fr;
+}
+
+#editor-left {
+    width: 26;
+    background: $panel;
+    border-right: vkey $panel-lighten-2;
+}
+
+#editor-right {
+    width: 38;
+    background: $panel;
+    border-left: vkey $panel-lighten-2;
+}
+
+#editor-center {
+    width: 1fr;
+}
+
+#editor-center > ContentSwitcher {
+    height: 1fr;
+}
+
+#editor-design-tab, #editor-code-tab {
+    padding: 0;
+    height: 1fr;
+}
+
+#editor-canvas {
+    height: 1fr;
+}
+
+#editor-code {
+    height: 1fr;
+}
+
+.panel-title {
+    width: 100%;
+    padding: 0 1;
+    background: $primary 30%;
+    text-style: bold;
+}
+
+#editor-palette {
+    height: 2fr;
+    scrollbar-size-vertical: 1;
+}
+
+#editor-tree {
+    height: 1fr;
+    background: $panel;
+}
+
+.palette-category {
+    width: 100%;
+    padding: 0 1;
+    margin-top: 1;
+    color: $text-muted;
+    text-style: bold italic;
+}
+
+.palette-item {
+    width: 100%;
+    padding: 0 2;
+    height: 1;
+}
+
+.palette-item:hover {
+    background: $accent 30%;
+}
+
+.palette-item:focus {
+    background: $accent 50%;
+    text-style: bold;
+}
+
+#editor-properties {
+    padding: 0 1;
+    scrollbar-size-vertical: 1;
+}
+
+.properties-title {
+    width: 100%;
+    margin-top: 1;
+    color: $accent;
+    text-style: bold;
+}
+
+.properties-empty {
+    margin: 1;
+    color: $text-muted;
+}
+
+.properties-section {
+    width: 100%;
+    margin-top: 1;
+    border-bottom: solid $foreground 20%;
+    color: $text-muted;
+    text-style: bold;
+}
+
+.field {
+    height: auto;
+}
+
+.field-label {
+    color: $text-muted;
+}
+
+.field-bool {
+    height: auto;
+    margin-top: 1;
+}
+
+.field-bool .field-label {
+    padding: 1 1;
+}
+
+.field-error {
+    color: $error;
+}
+
+.field Input.-invalid {
+    color: $error;
+}

@@ -1,0 +1,143 @@
+{
+  "format": "textual-editor",
+  "version": 1,
+  "title": "Login",
+  "class_name": "LoginApp",
+  "root": {
+    "type": "Screen",
+    "id": "screen",
+    "props": {
+      "free_layout": true,
+      "width": 70,
+      "height": 22
+    },
+    "styles": {
+      "background": "$boost"
+    },
+    "children": [
+      {
+        "type": "Header",
+        "id": "header1",
+        "props": {
+          "show_clock": true,
+          "border_title": "",
+          "tooltip": ""
+        },
+        "styles": {},
+        "children": []
+      },
+      {
+        "type": "Vertical",
+        "id": "vertical1",
+        "props": {
+          "border_title": "Sign in",
+          "tooltip": ""
+        },
+        "styles": {
+          "offset": "13 2",
+          "width": "44",
+          "height": "auto",
+          "border": "round $accent",
+          "background": "$panel",
+          "padding": "1 2"
+        },
+        "children": [
+          {
+            "type": "Label",
+            "id": "label1",
+            "props": {
+              "text": "Welcome back",
+              "border_title": "",
+              "tooltip": ""
+            },
+            "styles": {
+              "width": "100%",
+              "content-align": "center middle",
+              "text-style": "bold",
+              "color": "$accent"
+            },
+            "children": []
+          },
+          {
+            "type": "Input",
+            "id": "input1",
+            "props": {
+              "value": "",
+              "placeholder": "Username",
+              "password": false,
+              "border_title": "",
+              "tooltip": ""
+            },
+            "styles": {
+              "margin": "1 0 0 0"
+            },
+            "children": []
+          },
+          {
+            "type": "Input",
+            "id": "input2",
+            "props": {
+              "value": "",
+              "placeholder": "Password",
+              "password": true,
+              "border_title": "",
+              "tooltip": ""
+            },
+            "styles": {},
+            "children": []
+          },
+          {
+            "type": "Checkbox",
+            "id": "checkbox1",
+            "props": {
+              "label": "Remember me",
+              "value": false,
+              "border_title": "",
+              "tooltip": ""
+            },
+            "styles": {},
+            "children": []
+          },
+          {
+            "type": "Button",
+            "id": "button1",
+            "props": {
+              "label": "Sign in",
+              "variant": "primary",
+              "border_title": "",
+              "tooltip": ""
+            },
+            "styles": {
+              "width": "100%"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "type": "Label",
+        "id": "label2",
+        "props": {
+          "text": "v1.0 · made with textual-editor",
+          "border_title": "",
+          "tooltip": ""
+        },
+        "styles": {
+          "offset": "2 20",
+          "color": "$text-muted"
+        },
+        "children": []
+      },
+      {
+        "type": "Footer",
+        "id": "footer1",
+        "props": {
+          "border_title": "",
+          "tooltip": ""
+        },
+        "styles": {},
+        "children": []
+      }
+    ]
+  }
+}

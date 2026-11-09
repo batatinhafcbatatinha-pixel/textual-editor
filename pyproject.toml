@@ -1,0 +1,29 @@
+[project]
+name = "textual-editor"
+version = "0.1.0"
+description = "A visual, drag and drop, interface builder for Textual (like Swing's GUI builder)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "textual[media] @ git+https://github.com/batatinhafcbatatinha-pixel/textual.git",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-asyncio"]
+
+[project.scripts]
+textual-editor = "textual_editor.app:_cli"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/textual_editor"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
